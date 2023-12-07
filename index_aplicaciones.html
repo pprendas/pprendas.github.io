@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index_final.css">
+    <link rel="icon" href="imagenes/_it_ solo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <script src="https://kit.fontawesome.com/5f2fe7cc8b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Aplicaciones Enviadas</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo_negro.png" alt="WorkIt Logo">
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="index_login.html">Sign up / Log in</a>
+            <a href="index_empleos.html">Empleos</a>
+            <a href="index.html" onclick="cerrar()">Cerrar Sesión</a>
+        </nav>
+    </header>
+    <div class="positions_header">
+        <h1>Aplicaciones Enviadas</h1>
+        <div class="filter_part">
+            <div class="filter">
+                <label for="status">Estado</label>
+                <br/>
+                <select id="status">
+                    <option value="na"></option>
+                    <option value="send">Enviada</option>
+                    <option value="in_review">En revisión</option>
+                    <option value="deny">Rechazada</option>
+                    <option value="accepted">Aceptada</option>
+                </select>
+            </div>
+    
+            <div class="filter">
+                <label for="company">Empresa</label>
+                <br/>
+                <select id="company">
+                    <option value="na"></option>
+                    <option value="Company1">Amazon</option>
+                    <option value="Company2">Microsoft</option>
+                    <option value="Company3">Bac San José</option>
+                    <option value="Company4">Beto te presta</option>
+                    <option value="Company5">Almacenes Panchita</option>
+                    <option value="Company6">Supermercados unidos</option>
+                    <option value="Company7">Bufete Legal Solutions</option>
+                </select>
+            </div>
+    
+            <div class="filter">
+                <label for="type">Tipo</label>
+                <br/>
+                <select id="type">
+                    <option value="na"></option>
+                    <option value="salary1">₡ 350.000 - ₡ 450.000</option>
+                    <option value="salary2">₡ 450.000 - ₡ 550.000</option>
+                    <option value="salary3">₡ 550.000 - ₡ 650.000</option>
+                    <option value="salary4">Más de ₡ 650.000</option>
+                </select>
+            </div>
+    
+            <div class="filter">
+                <label for="salary">Salario</label>
+                <br/>
+                <select id="salary">
+                    <option value="na"></option>
+                    <option value="virtual">Remoto</option>
+                    <option value="hybrid">Híbrido</option>
+                    <option value="work_office">Presencial</option>
+                </select>
+            </div>
+            <button onclick="filterResults()">Buscar</button>
+        </div>
+        <hr/>
+        <div class="jobs_part">
+            <!--Job 1-->
+            <div class="applications">
+                <h2 class="element application_name">
+                    Ingeniero en Sistemas
+                </h2>
+                <div class="element job_description">
+                    <p>
+                        Un ingeniero de sistemas es responsable de la gestión y supervisión de todos los sistemas e infraestructuras instaladas. Algunas de las responsabilidades que se le pueden asignar incluyen:
+                    </p>
+                    <ul>
+                        <li>Instalación, configuración, pruebas y mantenimiento de sistemas operativos, el software de las aplicaciones y las herramientas de gestión de sistemas.</li>
+                    </ul> 
+                </div>
+                <div class="element apply">
+                    <span>Enviada</span>
+                </div>
+                <div class="element job_detail1">
+                    <p>Remoto</p>
+                </div>
+                <div class="element job_detail2">
+                    <p>Microsoft</p>
+                </div>
+                <div class="element job_detail3">
+                    <p>Contacto: rrhhmicrosoft@correo.com</p>
+                </div>
+            </div>
+
+            <!--Job 2-->
+            <div class="applications">
+                <h2 class="element application_name">
+                    Administrador de Inventarios
+                </h2>
+                <div class="element job_description">
+                    <p>
+                    Un administrador de inventarios es responsable de la gestión y control del inventario de una organización. Algunas de las responsabilidades que se le pueden asignar incluyen:
+                    </p>
+                    <ul>
+                        <li>Diseñar formas para optimizar los procedimientos de control de inventarios.</li>
+                        <li>Inspeccionar los niveles de suministros y materias primas de la empresa para detectar si existe desabastecimiento.</li>
+                        <li>Asegurar que las existencias de productos sean adecuadas para todos los canales de distribución y puedan cubrir la demanda de los clientes.</li>
+                    </ul> 
+                </div>
+                <div class="element apply">
+                    <span>En revisión</span>
+                </div>
+                <div class="element job_detail1">
+                    Presencial 
+                </div>
+                <div class="element job_detail2">
+                    Universal
+                </div>
+                <div class="element job_detail3">
+                    Contacto: rrhhmuniversal@correo.com
+                </div>
+            </div>
+
+            <!--Job 3-->
+            <div class="applications">
+                <h2 class="element application_name">
+                    Administrador de Bases de Datos (SQL)
+                </h2>
+                <div class="element job_description">
+                    <p>
+                    Un administrador de bases de datos es la persona encargada de la gestión de esta herramienta en la empresa. Algunas de las responsabilidades que se le pueden asignar incluyen:
+                    </p>
+                    <ul>
+                        <li>Creación de sistemas de bases de datos de alta calidad y disponibilidad según el puesto especializado de cada usuario final.</li>
+                        <li>Diseño e implementación de la base de datos de acuerdo con las necesidades de información y las opiniones de los usuarios finales.</li>
+                        <li>Mantenimiento y actualización constante de las bases de datos para garantizar que la información siempre permanezca al día, segura y accesible en cualquier momento.</li>
+                    </ul> 
+                </div>
+                <div class="element apply">
+                    <span>Rechazada</span>
+                </div>
+                <div class="element job_detail1">
+                    Híbrido
+                </div>
+                <div class="element job_detail2">
+                    E-Software Corp
+                </div>
+                <div class="element job_detail3">
+                    Contacto: rrhhmsoft-corp@correo.com
+                </div>
+            </div>
+
+            <!--Job 4-->
+            <div class="applications">
+                <h2 class="element application_name">
+                    Cuentas por Cobrar
+                </h2>
+                <div class="element job_description">
+                    <p>
+                    Un empleado de cuentas por cobrar es responsable de la gestión de las cuentas por cobrar de una empresa. Algunas de las responsabilidades que se le pueden asignar incluyen:
+                    </p>
+                    <ul>
+                        <li>Procesar cuentas por cobrar y pagos entrantes de conformidad con políticas y procedimientos financieros.</li>
+                        <li>Realizar transacciones financieras diarias, incluidas la verificación, clasificación, cálculo, contabilización y registro de datos de cuentas por cobrar.</li>
+                        <li>Preparar facturas por cobrar y depósitos bancarios.</li>
+                    </ul> 
+                </div>
+                <div class="element apply">
+                    <span>Aceptada</span>
+                </div>
+                <div class="element job_detail1">
+                    Remoto
+                </div>
+                <div class="element job_detail2">
+                    Beto te Presta
+                </div>
+                <div class="element job_detail3">
+                    Contacto: rrhhleprestamos@correo.com
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_part">
+            <div class="img_footer">
+                <img src="./imagenes/Logo_negro.png" alt="logo Workit">
+            </div>
+            <div class="nav_footer">
+                <nav class="navigation_footer">
+                    <a href="index.html">Inicio</a>
+                    <a href="index_login.html">Sign up / Log in</a>
+                    <a href="index_empleos.html">Empleos</a>
+                </nav>
+            </div>
+        </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

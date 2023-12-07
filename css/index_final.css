@@ -1,0 +1,1638 @@
+/*** Etiquetas Generales ***/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Geologica", sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+/* Nav */
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+header img {
+  height: 70px;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: #3a6db5;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+  transform: scaleX(1);
+}
+
+.title_block,
+.block_p,
+.workit_p {
+  text-align: left;
+  margin-left: 10px;
+}
+
+/*** black line ***/
+
+hr {
+  height: 3px;
+  margin: 20px;
+  color: #3a6db5;
+  background-color: #000000;
+  width: 95%;
+}
+
+/*********************************************************************************************/
+
+.title_block,
+.block_p,
+.workit_p {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.tab_form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 600px;
+  max-height: 500px;
+  background: #5880af;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+
+.tab_form .tab_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.tab_form .tab_header > div {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tab_form .tab_body {
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.tab_form .tab_body > div {
+  position: absolute;
+  width: 100%;
+  top: -150vh;
+  opacity: 0;
+  padding: 5px 25px;
+  transition: opacity 300ms ease-in-out 0ms;
+}
+
+.tab_form .tab_body > div.active {
+  top: 0px;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out 0ms;
+}
+
+.tab_form .tab_body > div h2 {
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tab_form .tab_body > div .form_input {
+  margin: 10px 0px;
+}
+
+.tab_form .tab_body > div .form_input label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.tab_form .tab_body > div .form_input option {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 15px;
+}
+
+.tab_form .tab_body > div .form_input input {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+/*** User type ***/
+.user_type {
+  width: 50%;
+  display: block;
+  margin-top: 5px;
+  font-size: 15px;
+  padding: 8px;
+  color: #ffffff;
+}
+
+.data .user_type select {
+  margin-top: 5px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+}
+
+/*** Gender ***/
+
+.form_gender {
+  display: block;
+  margin-top: 5px;
+  font-size: 15px;
+  padding: 8px;
+  color: #ffffff;
+}
+
+.data .form_gender select {
+  margin-top: 5px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+}
+
+/*** Botón Registrar ***/
+.submit {
+  text-decoration: none;
+  width: 450px;
+  margin-top: 100px;
+  margin-left: 45px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  background: #ffffff;
+  color: #4a9ff3;
+  font-weight: 600;
+}
+
+.Register_btn_rol {
+  text-decoration: none;
+  width: 450px;
+  margin-top: 100px;
+  margin-left: 45px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  background: #ffffff;
+  color: #4a9ff3;
+  font-weight: 600;
+}
+
+.Register_btn_rol a {
+  text-decoration: none;
+  color: #5880af;
+}
+
+.Register_btn_1 {
+  width: 450px;
+  margin-top: 40px;
+  margin-left: 45px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  background: #ffffff;
+  color: #4a9ff3;
+  font-weight: 600;
+}
+
+.Register_btn_1 a {
+  text-decoration: none;
+  color: #5880af;
+}
+
+/**************************************************************************************************/
+
+/* Generales */
+
+.element {
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  color: #000000;
+}
+
+.btn_dashboard {
+  display: block;
+  margin: 10px 0 0 5px;
+  background-color: #498ed3;
+  height: 25px;
+  width: 50px;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/*************************************************************************************************************************************************************/
+
+/*** Página principal ***/
+
+.middle_information {
+  padding: 50px;
+  text-align: center;
+}
+
+.middle_information h1,
+h2,
+h3 {
+  color: #3a6db5;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.segment {
+  padding: 25px;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  grid-template-areas:
+    "info1 foto1"
+    "foto2 info2";
+}
+
+.block_info1 {
+  grid-area: info1;
+  text-align: left;
+  margin: 180px 80px 200px 80px;
+}
+
+.block_info2 {
+  grid-area: info2;
+  text-align: left;
+  margin: 180px 80px 200px 80px;
+}
+
+.block_info1 h3 {
+  color: #3a6db5;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.block_info2 h3 {
+  color: #3a6db5;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.block_img1 {
+  grid-area: foto1;
+  height: 100%;
+  width: 100%;
+}
+
+.block_img1 img {
+  height: 100%;
+  width: 100%;
+}
+
+.block_img2 {
+  grid-area: foto2;
+  height: 100%;
+  width: 100%;
+}
+
+.block_img2 img {
+  height: 100%;
+  width: 100%;
+}
+/* Segmento final */
+
+.final_segment_div {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 200px;
+}
+
+.final_segment {
+  text-align: center;
+}
+
+.final_segment::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.final_p {
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .segment {
+    grid-template: 4fr / 1fr;
+    grid-template-areas:
+      "info1"
+      "foto1"
+      "foto2"
+      "info2";
+  }
+
+  .final_segment_div {
+    width: 100%;
+  }
+}
+
+/*******************************************************************************************************************************************************************/
+/** Aplicantes **/
+.applicants_header {
+  margin: 100px;
+}
+
+.filter_part {
+  width: 100%;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.filter {
+  padding: 1em;
+  color: #5880af;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.filter select {
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+}
+
+.filter_part button {
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  margin-top: 35px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  background-color: #5880af;
+  text-align: left;
+  padding: 5px;
+  border: none;
+}
+
+.filter_part button:hover {
+  background-color: #4a9ff3;
+  color: #000000;
+}
+
+/*** Fin Página principal ***/
+
+/*************************************************************************************************************************************************************/
+
+/*** Sign Up / Log in ***/
+
+.sign_log_form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 800px;
+  max-height: 400px;
+  background: #5880af;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+
+.sign_log_form .sign_log_header > div {
+  flex: 1;
+  padding: 55px 0 0 55px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.title_sign_log h3 {
+  color: #ffffff;
+}
+
+.sign_log_data {
+  min-height: 600px;
+  display: grid;
+  grid-template: repeat(3, 80px) / repeat(2, 1fr);
+  grid-template-areas:
+    "email login"
+    "password account"
+    "remember remember ";
+}
+
+.log_email {
+  grid-area: email;
+}
+
+.log_remember {
+  grid-area: remember;
+  margin-top: 15px;
+}
+
+.log_password {
+  grid-area: password;
+  margin-top: 15px;
+}
+
+.log_button {
+  grid-area: login;
+}
+
+.log_account {
+  grid-area: account;
+}
+
+.log_email,
+.log_remember,
+.log_password,
+.log_button,
+.log_account {
+  padding-top: 25px;
+  padding-left: 60px;
+  color: #ffffff;
+}
+
+.log_email input {
+  margin-top: 10px;
+  padding: 5px;
+  width: 280px;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+}
+
+.log_password input {
+  width: 180px;
+  height: 35px;
+  margin-top: 10px;
+  padding: 5px;
+  width: 280px;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+}
+
+.log_button button {
+  background-color: #ffffff;
+  cursor: pointer;
+  width: 280px;
+  height: 35px;
+  margin-top: 28px;
+  padding: 5px;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+}
+
+.log_button button a {
+  color: #3a6db5;
+  font-weight: bold;
+}
+
+.log_button a {
+  color: #ffffff;
+  margin: 50px;
+  text-decoration: none;
+}
+
+.log_account {
+  margin-top: 65px;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+}
+
+.log_account a {
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.log_remember input {
+  background-color: #3a6db5;
+  border-color: #ffffff;
+}
+
+/*************************************************************************************************************************************************************/
+
+/*** Restaurar ***/
+
+.restore_form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 800px;
+  max-height: 400px;
+  background: #5880af;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+
+.restore_form .restore_header > div {
+  flex: 1;
+  padding: 40px 0 0 55px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.title_restore h3 {
+  margin-right: 60px;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.title_restore p {
+  margin-right: 60px;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.restore_data {
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  min-height: 350px;
+  display: grid;
+}
+
+.restore_email label {
+  padding-right: 200px;
+}
+
+.restore_email input {
+  margin-top: 10px;
+  padding: 5px;
+  width: 280px;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+}
+
+.restore_button button {
+  background-color: #ffffff;
+  cursor: pointer;
+  width: 280px;
+  height: 35px;
+  padding: 5px;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+  color: #3a6db5;
+  font-weight: bold;
+}
+
+.restore_button button a {
+  text-decoration: none;
+  color: #5880af;
+}
+
+/*************************************************************************************************************************************************************/
+
+/**    Perfiles Administración / manager / mi perfil / reclutador **/
+
+.profile_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  padding-top: 80px;
+  padding-left: 80px;
+}
+
+.manager_recruiter_body {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 200px;
+  padding-top: 70px;
+  padding-left: 80px;
+}
+
+.profile_header {
+  padding-top: 80px;
+  padding-left: 100px;
+}
+
+.profile_header h3 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.card {
+  float: left;
+  width: 25%;
+  position: relative;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.preson_card {
+  float: left;
+  padding: 45px;
+  width: 33.33%;
+  position: relative;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.card .box {
+  margin: 80px 10px 70px 18px;
+  width: 400px;
+  position: relative;
+  height: 230px;
+  background-color: #5880af;
+  border-radius: 20px;
+  padding-top: 75px;
+  padding-left: 25px;
+  color: #ffffff;
+  border: none;
+}
+
+.card .box a {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.preson_card .person_box {
+  margin: 80px 10px 70px 18px;
+  width: 400px;
+  position: relative;
+  height: 230px;
+  background-color: #5880af;
+  border-radius: 20px;
+  padding-top: 75px;
+  padding-left: 25px;
+  color: #ffffff;
+}
+
+.card .box h3 {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.card .circle {
+  top: 15%;
+  left: 10%;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  padding-top: 9px;
+  padding-left: 10px;
+}
+
+.card .circle img {
+  margin: 5px 0 0 5px;
+  height: 40px;
+}
+
+.preson_card .person_circle {
+  top: 15%;
+  left: 10%;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  padding-top: 9px;
+  padding-left: 10px;
+}
+
+/***************************************************************************************************************************************************************************************/
+
+/*    Empleos    */
+
+.job {
+  padding: 50px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  grid-template-areas:
+    "header header header boton"
+    "contents contents contents boton"
+    "detail1    detail2    detail3    boton";
+  grid-gap: 5px;
+}
+
+.job_name {
+  grid-area: header;
+  text-align: left;
+  font-size: 25px;
+  padding-top: 35px;
+  height: 100px;
+}
+
+.job_description {
+  grid-area: contents;
+  margin-bottom: 25px;
+  padding-left: 25px;
+}
+
+.job_description ul {
+  margin: 30px 0 0 30px;
+}
+
+.job_detail1 {
+  grid-area: detail1;
+  background-color: rgba(247, 247, 247, 0.911);
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000000;
+  height: 45px;
+}
+
+.job_detail2 {
+  grid-area: detail2;
+  background-color: rgba(247, 247, 247, 0.911);
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000000;
+  height: 45px;
+}
+
+.job_detail3 {
+  grid-area: detail3;
+  background-color: rgba(247, 247, 247, 0.911);
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #000000;
+  height: 45px;
+}
+
+.button_apply {
+  grid-area: boton;
+  text-align: center;
+  height: 215px;
+}
+
+.button_apply button {
+  border: none;
+  font-size: 20px;
+  height: 30px;
+  width: 100px;
+  margin-top: 10px;
+  color: #000000;
+  padding: 5px;
+}
+
+.button_apply button:hover {
+  color: #ffffff;
+  background-color: rgba(58, 109, 181, 0.9);
+}
+
+/*************************************************************************************************************************************************************/
+
+/*    Creación de Perfil Usuario y Empresa */
+
+.profile_form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 600px;
+  background: #5880af;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+}
+
+.profile_form .profile_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.profile_form .profile_header > div {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.profile_form .profile_header > div.active {
+  border: 1px solid #4a9ff3;
+  color: #4a9ff3;
+  background: #e9f4ff;
+}
+
+.data_profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profile_form .profile_body {
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.profile_form .profile_body > div {
+  position: absolute;
+  width: 100%;
+  top: -150vh;
+  opacity: 0;
+  padding: 5px 25px;
+  transition: opacity 300ms ease-in-out 0ms;
+  color: #ffffff;
+  margin-right: 80px;
+}
+
+.profile_form .profile_body > div.active {
+  top: 0px;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out 0ms;
+}
+
+.profile_form .profile_body > div h2 {
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile_form .profile_body > div .profile_input {
+  margin: 10px 0px;
+}
+
+.profile_form .tab-body > div .profile_input label {
+  display: block;
+  font-size: 15px;
+}
+
+.profile_form .profile_body > div .profile_input input {
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 15px;
+  padding: 8px;
+}
+
+.profile_input textarea {
+  border-radius: 8px;
+  display: block;
+  font-size: 12px;
+  padding: 5px;
+  color: #000000;
+}
+
+/*** Photo ***/
+.form_photo {
+  width: 50%;
+}
+
+.photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 15px;
+  margin-top: 20px;
+  /* margin bottom */
+}
+
+.photo_label {
+  display: block;
+  width: 100px;
+  background-color: #4a9ff3;
+  color: #ffffff;
+  padding: 10px;
+  margin: 0 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.photo_input {
+  display: none;
+}
+
+/*** PDF doc ***/
+
+.form_pdf {
+  width: 50%;
+}
+
+.document_request {
+  display: block;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0 0 65px;
+  color: #ffffff;
+}
+
+.document_label {
+  display: block;
+  align-items: center;
+  background-color: #4a9ff3;
+  color: #ffffff;
+  padding: 10px 5px 8px 30px;
+  margin: 10px 0 0px 65px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pdf_input {
+  display: none;
+}
+
+/*** Empresa ***/
+.company {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company .profile_input {
+  width: 100%;
+}
+
+/*** Botón Registrar ***/
+
+.profile_btn {
+  width: 550px;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  background: #ffffff;
+  color: #5880af;
+  font-weight: 600;
+}
+
+.profile_btn a {
+  text-decoration: none;
+  color: #5880af;
+}
+
+.profile_btn2 {
+  width: 550px;
+  margin-top: 100px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  background: #ffffff;
+  font-weight: 600;
+}
+
+.profile_btn2 a {
+  text-decoration: none;
+  color: #5880af;
+}
+
+/*************************************************************************************************************************************************************/
+
+/*    Aplicaciones Enviadas     */
+
+.applications {
+  padding: 1em;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  grid-template-areas:
+    "header header header tipo"
+    "contenido contenido contenido tipo"
+    "detail1    detail2    detail3    tipo";
+  grid-gap: 5px;
+}
+
+.application_name {
+  grid-area: header;
+  text-align: left;
+  font-weight: bold;
+  color: #5880af;
+}
+
+.apply {
+  grid-area: tipo;
+  text-align: center;
+  height: 215px;
+}
+
+.apply span {
+  font-size: 22px;
+}
+
+/*************************************************************************************************************************************************************/
+
+/** Aplicantes **/
+
+.applicants {
+  padding: 1em;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+  grid-template-areas:
+    "name name name name email"
+    "information information information information email"
+    "info1 info2 info3 info4 email";
+  grid-gap: 5px;
+}
+
+.applicants_header h1 {
+  color: #5880af;
+}
+
+.applicant_name {
+  grid-area: name;
+}
+
+.applicant_description {
+  margin-bottom: 30px;
+  grid-area: information;
+}
+
+.email {
+  grid-area: email;
+}
+
+.email button {
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  height: 35px;
+  width: 180px;
+  margin-top: 10px;
+  color: #000000;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #ffffff;
+}
+
+.email button:hover {
+  color: #ffffff;
+  background-color: rgba(58, 109, 181, 0.9);
+}
+
+.applicant_detail1 {
+  grid-area: info1;
+  background-color: rgba(247, 247, 247, 0.911);
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  height: 35px;
+  width: 230px;
+}
+
+.applicant_detail2 {
+  grid-area: info2;
+  background-color: rgba(247, 247, 247, 0.911);
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  height: 35px;
+  width: 230px;
+}
+
+.applicant_detail3 {
+  grid-area: info3;
+  background-color: rgba(247, 247, 247, 0.911);
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  height: 35px;
+  width: 230px;
+}
+
+.applicant_detail4 {
+  grid-area: info4;
+  background-color: rgba(247, 247, 247, 0.911);
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  height: 35px;
+  width: 230px;
+}
+
+/***************************************************************************************************************************************************************************************/
+
+/*    Formulario Puesto de Trabajo     */
+
+.work_form {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  width: 100%;
+  max-width: 700px;
+  max-height: 620px;
+  background: #5880af;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+}
+
+.work_form .work_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.work_form .work_header > div {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.form_data_work {
+  display: grid;
+  left: 50%;
+  height: 500px;
+  grid-template: repeat(3, 120px) / repeat(2, 170px);
+  grid-template-areas:
+    "puesto . tipo"
+    "descripcion . rango"
+    "requisitos . atributos"
+    "boton1 boton2 boton3";
+  grid-gap: 3px;
+}
+
+.element_work {
+  margin-left: 60px;
+  border-radius: 10px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.element_work input {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 35px;
+  width: 220px;
+  background-color: #ffffff;
+}
+
+.element_work select {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 35px;
+  width: 220px;
+  background-color: #ffffff;
+}
+
+.element_work select option {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.element_work textarea {
+  margin-top: 8px;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #000000;
+  width: 220px;
+}
+
+.element_botton {
+  margin-top: 60px;
+  margin-left: 100px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.position {
+  grid-area: puesto;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.working_mode {
+  grid-area: tipo;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.descrition_job {
+  grid-area: descripcion;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.salary_range {
+  grid-area: rango;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.requirements {
+  grid-area: requisitos;
+  font-size: 15px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.attributes {
+  grid-area: atributos;
+  font-size: 15px;
+  margin-top: 28px;
+  font-weight: bold;
+}
+
+.save_div {
+  grid-area: boton1;
+  text-align: center;
+  height: 200px;
+}
+
+.save_div button {
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 30px;
+  width: 150px;
+  background-color: #ffffff;
+  color: #5880af;
+}
+
+.save_div button:hover {
+  color: #ffffff;
+  background-color: rgba(58, 109, 181, 0.9);
+}
+
+.edit_div {
+  grid-area: boton2;
+  text-align: center;
+  height: 215px;
+}
+
+.edit_div button {
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 30px;
+  width: 150px;
+  background-color: #ffffff;
+  color: #5880af;
+}
+
+.edit_div button:hover {
+  color: #ffffff;
+  background-color: rgba(58, 109, 181, 0.9);
+}
+
+.publish_div {
+  grid-area: boton3;
+  margin-left: 15px;
+  text-align: center;
+  height: 215px;
+}
+
+.publish_div button {
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 30px;
+  width: 150px;
+  background-color: #ffffff;
+  color: #5880af;
+}
+
+.publish_div button:hover {
+  color: #ffffff;
+  background-color: rgba(58, 109, 181, 0.9);
+}
+
+/*************************************************************************************************************************************************************/
+
+/*    Usuarios y Perfiles     */
+
+.info_users_profile {
+  padding: 20px;
+  display: grid;
+}
+
+.users_profiles_header h1 {
+  color: #5880af;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.user_name_profile,
+.user_name_description {
+  margin-bottom: 15px;
+}
+
+.user_name_edit a {
+  text-decoration: none;
+  color: #5880af;
+}
+
+.user_name_edit a:visited {
+  text-decoration: none;
+}
+
+.user_name_edit a:link {
+  text-decoration: none;
+}
+
+.user_name_edit button {
+  border: solid 0.5px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  height: 30px;
+  width: 150px;
+  margin-top: 8px;
+  color: #000000;
+  padding: 5px;
+  border: none;
+}
+
+.user_name_edit button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*************************************************************************************************************************************************************/
+
+/*    Puestos Empresas     */
+
+.positions_header,
+.users_profiles_header {
+  margin: 100px;
+}
+
+.positions_header h1 {
+  font-weight: bold;
+  font-size: 35px;
+  color: #3a6db5;
+  padding-left: 20px;
+}
+
+.company_job {
+  padding: 1em;
+  display: grid;
+  grid-template: repeat(2, 80px) / repeat(2, 1fr);
+  grid-template-areas:
+    "header detail"
+    "description detail";
+  margin-bottom: 50px;
+}
+
+.job_name_company {
+  grid-area: header;
+  text-align: left;
+  font-size: 25px;
+}
+
+.job_description_company {
+  grid-area: description;
+  text-align: left;
+}
+
+.job_detail {
+  grid-area: detail;
+  text-align: center;
+}
+
+.job_detail p {
+  height: 120px;
+}
+
+.job_detail button {
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  height: 30px;
+  width: 100px;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #3a6db5;
+}
+
+.job_detail button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.job_detail button:hover {
+  color: #ffffff;
+  background-color: rgba(58, 109, 181, 0.9);
+}
+
+.company_job h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #3a6db5;
+  padding-left: 15px;
+}
+
+/***************************************************************************************************************************************************************************************/
+
+/*    Empleos    */
+
+.job {
+  padding: 1em;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  grid-template-areas:
+    "header header header boton"
+    "contenido contenido contenido boton"
+    "detail1    detail2    detail3    boton";
+  grid-gap: 5px;
+}
+
+.job_name {
+  grid-area: header;
+  text-align: left;
+  font-size: 25px;
+  color: #5880af;
+}
+
+.job_description {
+  grid-area: contenido;
+  text-align: left;
+}
+
+.job_detail1 {
+  grid-area: detail1;
+  background-color: rgba(247, 247, 247, 0.911);
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000000;
+  height: 45px;
+}
+
+.job_detail2 {
+  grid-area: detail2;
+  background-color: rgba(247, 247, 247, 0.911);
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000000;
+  height: 45px;
+}
+
+.job_detail3 {
+  grid-area: detail3;
+  background-color: rgba(247, 247, 247, 0.911);
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #000000;
+  height: 45px;
+}
+
+.button_apply {
+  grid-area: boton;
+  text-align: center;
+  height: 215px;
+}
+
+.button_apply button {
+  border: none;
+  font-size: 20px;
+  height: 30px;
+  width: 180px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-top: 5px;
+  color: #000000;
+  padding: 5px;
+}
+
+.button_apply button:hover {
+  color: #ffffff;
+  background-color: rgba(58, 109, 181, 0.9);
+}
+
+/*************************************************************************************************************************************************************/
+
+/*    Footer     */
+
+.footer_part {
+  margin-top: 100px;
+  left: 40%;
+}
+
+.img_footer {
+  display: flex;
+  min-height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_footer img {
+  height: 120px;
+}
+
+.nav_footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation_footer a {
+  position: relative;
+  font-size: 1.1em;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation_footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: #3a6db5;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.navigation_footer a:hover::after {
+  transform: scaleX(1);
+}

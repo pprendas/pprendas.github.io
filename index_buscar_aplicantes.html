@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index_final.css">
+    <link rel="icon" href="imagenes/_it_ solo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <script src="https://kit.fontawesome.com/5f2fe7cc8b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Aplicantes</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo_negro.png" alt="WorkIt Logo">
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="index_login.html">Sign up / Log in</a>
+            <a href="index_empleos.html">Empleos</a>
+        </nav>
+    </header>
+    <div class="applicants_header">
+        <h1>Buscar Aplicantes</h1>
+        <div class="filter_part">
+            <div class="filter">
+                <label for="years">Años de experiencia</label>
+                <br/>
+                <select id="years">
+                    <option value="na"></option>
+                    <option value="zero">sin experiencia</option>
+                    <option value="one_three">1 a 3 años</option>
+                    <option value="three_five">3 a 5 años</option>
+                    <option value="more_five">más de 5 años</option>
+                </select>
+            </div>
+        
+            <div class="filter">
+                    <label for="type">Escolaridad</label>
+                <br/>
+                <select id="type">
+                    <option value="na"></option>
+                    <option value="schooling1">Educación Primaria finalizada</option>
+                    <option value="schooling2">Educación Secundaria finalizada</option>
+                    <option value="schooling3">Maestría</option>
+                    <option value="schooling4">Licenciatura</option>
+                    <option value="schooling5">Técnico</option>
+                </select>
+            </div>
+
+            <div class="filter">
+                <label for="type">Campo de trabajo</label>
+            <br/>
+            <select id="type">
+                <option value="na"></option>
+                <option value="job_area1">Campo 1</option>
+                <option value="job_area1">Campo 2</option>
+                <option value="job_area1">Campo 3</option>
+                <option value="job_area1">Campo 4</option>
+            </select>
+        </div>
+
+            <div class="filter">
+                    <label for="type">Disponibilidad</label>
+                <br/>
+                <select id="type">
+                    <option value="na"></option>
+                    <option value="availability1">Inmediata</option>
+                    <option value="availability3">1 semana</option>
+                    <option value="availability3">2 semanas</option>
+                    <option value="availability3">3 semanas</option>
+                    <option value="availability2">1 mes</option>
+                    <option value="availability3">2 meses</option>
+                    <option value="availability3">Más de 3 meses</option>
+                </select>
+            </div>
+
+            <button>
+                Buscar
+            </button>
+        </div>
+        <hr/>
+        <div class="applicants_part">
+            <!--applicant 1-->
+            <div class="applicants">
+                <h2 class="applicant_name">
+                    Maria santos
+                </h2>
+                <p class="applicant_description">
+                    Desarrollo de Software, con enfoque particular en Java y Python.
+                </p>
+                <div class="email">
+                    <button onclick="enviar_correo()"><b>Enviar correo</b></button>
+                </div>
+                <div class="applicant_detail1">
+                    <p>Recien Graduada</p>
+                </div>
+                <div class="applicant_detail2">
+                    <p>Licenciatura</p>
+                </div>
+                <div class="applicant_detail3">
+                    <p>marai.santos@ejemplo.com</p>
+                </div>
+                <div class="applicant_detail4">
+                    <p>Inmediata</p>
+                </div>
+            </div>
+
+            <!--applicant 2-->
+            <div class="applicants">
+                <h2 class="applicant_name">
+                    Ricardo Gómez
+                </h2>
+                <p class="applicant_description">
+                    Desarrollo de Software en lenguajes como Java, Python y C++, con experiencia en liderar equipos y tomar decisiones técnicas.
+                </p>
+                <div class="email">
+                    <button onclick="enviar_correo()"><b>Enviar correo</b></button>
+                </div>
+                <div class="applicant_detail1">
+                    <p>7 años</p>
+                </div>
+                <div class="applicant_detail2">
+                    <p>Maestría</p>
+                </div>
+                <div class="applicant_detail3">
+                    <p>ricardo.gom@ejemplo.com</p>
+                </div>
+                <div class="applicant_detail4">
+                    <p>1 mes</p>
+                </div>
+            </div>
+
+            <!--applicant 3-->
+            <div class="applicants">
+                <h2 class="applicant_name">
+                    Laura Pérez
+                </h2>
+                <p class="applicant_description">
+                    Seguridad de la información, con experiencia en implementación de medidas de seguridad y auditorías.
+                </p>
+                <div class="email">
+                    <button onclick="enviar_correo()"><b>Enviar correo</b></button>
+                </div>
+                <div class="applicant_detail1">
+                    <p>4 años</p>
+                </div>
+                <div class="applicant_detail2">
+                    <p>Licenciatura</p>
+                </div>
+                <div class="applicant_detail3">
+                    <p>laura.perez@ejemplo.com</p>
+                </div>
+                <div class="applicant_detail4">
+                    <p>Inmediata</p>
+                </div>
+            </div>
+
+            <!--applicant 4-->
+            <div class="applicants">
+                <h2 class="applicant_name">
+                    Andrea López
+                </h2>
+                <p class="applicant_description">
+                    Gestión de proyectos de TI, con experiencia en liderazgo, gestion de riesgos y gestión de cambio
+                </p>
+                <div class="email">
+                    <button onclick="enviar_correo()"><b>Enviar correo</b></button>
+                </div>
+                <div class="applicant_detail1 space">
+                    <p>5 años</p>
+                </div>
+                <div class="applicant_detail2 space">
+                    <p>Técnico</p>
+                </div>
+                <div class="applicant_detail3 space">
+                    <p>andrea.lopez@ejemplo.com</p>
+                </div>
+                <div class="applicant_detail4 space">
+                    <p>2 semanas</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_part">
+            <div class="img_footer">
+                <img src="./imagenes/Logo_negro.png" alt="logo Workit">
+            </div>
+            <div class="nav_footer">
+                <nav class="navigation_footer">
+                    <a href="index.html">Inicio</a>
+                    <a href="index_login.html">Sign up / Log in</a>
+                    <a href="index_empleos.html">Empleos</a>
+                </nav>
+            </div>
+        </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

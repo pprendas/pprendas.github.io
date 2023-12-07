@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index_final.css">
+    <link rel="icon" href="imagenes/_it_ solo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Creación de perfiles de la empresa</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo_negro.png" alt="WorkIt Logo">
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="index_login.html">Sign up / Log in</a>
+            <a href="index_empleos.html">Empleos</a>
+        </nav>
+    </header>
+    <div class="tab_form">
+        <div class="tab_header">
+            <div class="active">
+                Formulario de roles de la empresa
+            </div>
+        </div>
+        <div class="tab_body">
+            <div class="user active">
+                <form action="">
+                    <div class="data">
+                        <div class="form_input">
+                            <label for="">Nombre Completo:</label>
+                            <input type="text" placeholder="Ingrese su nombre" required>
+                        </div>
+                        <div class="form_input">
+                            <label for="">Correo Electrónico</label>
+                            <input type="email" placeholder="Ingrese su correo" id="correo_rol" required>
+                        </div>
+                        <div class="user_type">
+                            <label for="type">Rol</label>
+                            <br/>
+                            <select id="type" required>
+                                <option value="none"></option>
+                                <option value="admin">Administrador</option>
+                                <option value="manager">Manager</option>
+                                <option value="recruiter">Reclutador</option>
+                            </select>
+                        </div>
+                        <div class="form_input">
+                            <button class="Register_btn_rol" onclick="roles()">Registrarse</button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

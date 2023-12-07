@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index_final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Imagenes/_it_ solo.png">
+    <title>Perfil Administrador</title>
+</head>
+<body>
+    <header id="home">
+        <img src="imagenes/Logo_negro.png" alt="WorkIt Logo">
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="index_login.html">Sign up / Log in</a>
+            <a href="index_empleos.html">Empleos</a>
+            <a href="index.html" onclick="cerrar()">Cerrar Sesión</a>
+        </nav>
+    </header>
+    <div class="profile_header">
+        <h3> Mi perfil <span>(Administrador)</span> </h3><br/>
+        <p>Acá va a entonctrar lo que puede hacer con su perfil</p>
+    </div>
+    <div class="profile_body">
+        <div class="card">
+            <div class="box">
+                <h3 class="square_title">Perfil de la empresa</h3>
+                <p class="final_p">Acá puede ver y modificar la información de su empresa (nombre, foto, correo, etc.).</p>
+                <button class="btn_dashboard">
+                    <a href="index_form_creacion_perfil_empresa_login.html">Ir</a>
+                </button>
+            </div>
+            <div class="circle">
+                <img src="imagenes/office.png" alt="oficinas">
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <h3 class="square_title">Usuarios y perfiles</h3>
+                <p class="final_p">Acá puede administrar los usuarios y perfiles de managers y reclutadores de su empresa.</p>
+                <button class="btn_dashboard" onclick="perfil_admin()">
+                    Ir
+                </button>
+            </div>
+            <div class="circle">
+                <img src="imagenes/group.png" alt="grupo">
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <h3 class="square_title">Puesto de trabajo</h3>
+                <p class="final_p">Acá puede ver, crear, modificar o eliminar puestos de trabajo.</p>
+                <button class="btn_dashboard" onclick="perfil_admin_puestos()">
+                    Ir
+                </button>
+            </div>
+            <div class="circle">
+                <img src="imagenes/files.png" alt="documentos">
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <h3 class="square_title">Aplicantes</h3>
+                <p class="final_p">Acá puede buscar y filtrar perfiles de aplicantes con ciertos parámetros.</p>
+                <button class="btn_dashboard" onclick="perfil_admin_aplicantes()">
+                    Ir
+                </button>
+            </div>
+            <div class="circle">
+                <img src="imagenes/user.png" alt="usuarios">
+            </div>
+        </div>
+    </div>
+    <div class="footer_part">
+        <div class="img_footer">
+            <img src="./imagenes/Logo_negro.png" alt="logo Workit">
+        </div>
+        <div class="nav_footer">
+            <nav class="navigation_footer">
+                <a href="index.html">Inicio</a>
+                <a href="index_login.html">Sign up / Log in</a>
+                <a href="index_empleos.html">Empleos</a>
+            </nav>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

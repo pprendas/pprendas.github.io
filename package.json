@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "init": "^0.1.2",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.0",
+    "node": "^20.5.0",
+    "nodemon": "^3.0.1"
+  },
+  "name": "primera_iteracion_grupo_1",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon ./js/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

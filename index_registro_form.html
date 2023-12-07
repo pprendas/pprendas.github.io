@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index_final.css">
+    <link rel="icon" href="imagenes/_it_ solo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Formulario Registro</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo_negro.png" alt="WorkIt Logo">
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="index_login.html">Sign up / Log in</a>
+            <a href="index_empleos.html">Empleos</a>
+        </nav>
+    </header>
+    <div class="tab_form">
+        <div class="tab_header">
+            <div>
+                Formulario de Registro
+            </div>
+        </div>
+        <div class="tab_body">
+            <div class="user active">
+                <form id="registrationForm">
+                    <div class="data">
+                        <div class="form_input">
+                            <label for="">Nombre Completo:</label>
+                            <input type="text" placeholder="Ingrese su nombre"name='name'id="name"  required>
+                        </div>
+                        <div class="form_input">
+                            <label for="">Correo Electrónico</label>
+                            <input type="email" placeholder="Ingrese su correo"name="email"id='email'  required>
+                        </div>
+                        <div class="form_input">
+                            <label for="">Contraseña</label>
+                            <input type="password" placeholder="Ingrese su contraseña"id="password" required>
+                        </div>
+                        <div class="form_input">
+                            <label for="">Confirmación Contraseña</label>
+                            <input type="password" placeholder="Confirme su contraseña"name='password' required>
+                        </div>
+                        <div class="user_type">
+                            <label for="pageSelect">Tipo de Usuario</label>
+                            <br/>
+                            <select id="pageSelect">
+                                <option value=""></option>
+                                <option value="index_creacion_perfiles_usuarios.html">Usuario</option>
+                                <option value="index_form_creacion_perfil_empresa.html">Empresa</option>
+                            </select>
+                        </div>
+                        <div class="form_gender">
+                            <label for="genero">Genero</label>
+                            <br/>
+                            <select id="genero" required>
+                                <option value="none"></option>
+                                <option value="na">No aplica</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="no-responder">Prefiero no responder</option>
+                            </select>
+                        </div>
+                        <div class="form_input">
+                            <button class="Register_btn_1" onclick="cargarPagina()" >Registrarse</button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script>
+const registrationForm = document.getElementById('registrationForm');
+registrationForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const formData = new FormData(registrationForm);
+  await registrationForm
+  const userData = {
+    name: formData.get('name'),
+    email: formData.get('email'),
+    password: formData.get('password'),
+  };
+  
+  try {
+    const response = await fetch('http://localhost:5501/Usuarios', { 
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(userData),
+    });
+    
+    const data = await response.json(); 
+    alert(data.message);
+    // Puedes redirigir al usuario a otra página o realizar otras acciones después del registro exitoso
+  } catch (error) {
+    console.error('Error al registrar el usuario:', error);
+  }
+});
+
+      </script>
+    </body>
+    </html>
+</body>
+</html>

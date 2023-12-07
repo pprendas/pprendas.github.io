@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index_final.css">
+    <link rel="icon" href="imagenes/_it_ solo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <script src="https://kit.fontawesome.com/5f2fe7cc8b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Formulário Puestos de Trabajo</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo_negro.png" alt="WorkIt Logo">
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="index_login.html">Sign up / Log in</a>
+            <a href="index_empleos.html">Empleos</a>
+        </nav>
+    </header>
+    <div class="work_form">
+        <div class="work_header">
+            <div class="active">
+                <b>Detalle de puesto de trabajo</b>
+            </div>
+        </div>
+        <div class="work_body">
+            <form action="">
+                <div class="form_data_work">
+                    <div class="element_work position">
+                        <label for="">Puesto:</label>
+                        <input type="text" placeholder="Ingrese nombre del puesto" required>
+                    </div>
+                    <div class="element_work working_mode">
+                        <label for="type">Tipo</label>
+                        <br/>
+                        <select id="type" required>
+                            <option value="admin">Remoto</option>
+                            <option value="client">Híbrido</option>
+                            <option value="company">Presencial</option>
+                        </select>
+                    </div>
+                    <div class="element_work descrition_job">
+                        <label for="">Descripción</label>
+                        <textarea name="" id="description" cols="25" rows="5" placeholder="Ingrese la descripción" required></textarea>
+                    </div>
+                    <div class="element_work salary_range">
+                        <label for="type">Rango Salarial</label>
+                        <input type="text" placeholder="Ingrese rango de salario" required>
+                    </div>
+                    <div class="element_work requirements">
+                        <label for="">Requisitos mínimos</label>
+                        <textarea name="" id="requirements" cols="25" rows="5" placeholder="Ingrese los requisitos" required></textarea>
+                    </div>
+                    <div class="element_work attributes">
+                        <label for="">Atributos Deseables</label>
+                        <textarea name="" id="attributes" cols="25" rows="5" placeholder="Ingrese los atributos" id="job_requirements" required></textarea>
+                    </div>
+                    <div class="element_botton save_div">
+                        <button class="save" onclick="save()">Guardar</button>
+                    </div>
+                    <div class="element_botton edit_div">
+                        <button class="edit" onclick="edit()">Editar</button>
+                    </div>
+                    <div class="element_botton publish_div">
+                        <button class="publish" onclick="publish()">Publicar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+            
+
+    <div class="footer_part">
+        <div class="img_footer">
+            <img src="./imagenes/Logo_negro.png" alt="logo Workit">
+        </div>
+        <div class="nav_footer">
+            <nav class="navigation_footer">
+                <a href="index.html">Inicio</a>
+                <a href="index_login.html">Sign up / Log in</a>
+                <a href="index_empleos.html">Empleos</a>
+            </nav>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

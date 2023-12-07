@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index_final.css">
+    <link rel="icon" href="imagenes/_it_ solo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Registro de Perfiles Empresas</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo_negro.png" alt="WorkIt Logo">
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="index_login.html">Sign up / Log in</a>
+            <a href="index_empleos.html">Empleos</a>
+            <a href="index.html" onclick="cerrar()">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <div class="profile_form">
+        <div class="profile_header">
+            <div class="active">
+                Registro Empresas
+            </div>
+        </div>
+        <div class="profile_body">
+            <div class="active">
+                <form action="">
+                    <h2>Datos Empresa</h2>
+                    <div class="data_profile">
+                        <div class="company">
+                            <form action="">
+                                <div class="profile_input">
+                                    <label for="">Nombre de la empresa:</label>
+                                    <input type="text" placeholder="Ingrese el nombre de la empresa" required>
+                                </div>
+                                <div class="profile_input">
+                                    <label for="">Correo Electrónico:</label>
+                                    <input type="email" id="email" placeholder="Ingrese el correo de la empresa" required>
+                                </div>
+                                <div class="profile_input">
+                                    <label for="">Descripción de la empresa:</label>
+                                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Ingrese la información" required></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="profile_input">
+                            <button onclick="guardar_empresa()" class="profile_btn2">Guardar Perfil</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>    
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

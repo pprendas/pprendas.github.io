@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index_final.css">
+    <link rel="icon" href="imagenes/_it_ solo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Registro de Perfiles Usuarios</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo_negro.png" alt="WorkIt Logo">
+        <nav class="navigation">
+            <a href="index.html">Inicio</a>
+            <a href="index_login.html">Sign up / Log in</a>
+            <a href="index_empleos.html">Empleos</a>
+        </nav>
+    </header>
+    <div class="profile_form">
+        <div class="profile_header">
+            <div class="active">
+                Registro Usuario
+            </div>
+        </div>
+        <div class="profile_body">
+            <div class="active">
+                <form action="">
+                    <h2>Crear perfil profesional</h2>
+                <div class="data_profile">
+                    <div class="profile_input">
+                        <label for="">Nombre Completo:</label>
+                        <input type="text" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="profile_input">
+                        <label for="">Correo Electrónico:</label>
+                        <input type="email" id="email" placeholder="Ingrese su correo" required>
+                    </div>
+                    <div class="profile_input">
+                        <label for="">Educación</label>
+                        <input type="text" placeholder="Ingrese su información" required>
+                    </div>
+                    <div class="profile_input">
+                        <label for="">Experiencia Laboral</label>
+                        <input type="text" id="education" placeholder="Ingrese su información" required>
+                    </div>
+                    <div class="form_photo">
+                        <div class="photo">
+                            <img src="imagenes/profile.png" alt="Imagen Usuario" id="profile_photo">
+                            <label class="photo_label" for="input_file">Subir foto</label>
+                            <input class="photo_input" type="file" accept="image/jpeg, image/png, image/jpg" id="input_file">
+                        </div>
+                    </div>
+                    <div class="form_pdf">
+                        <div class="document">
+                            <label class="document_request" for="">Archivo PDF (No más de 3MB)</label>
+                            <label class="document_label" for="input-file">Subir archivo PDF</label>
+                            <input class="pdf_input" type="file" accept=".doc, .docs, .pdf" id="input-file">
+                        </div>
+                    </div>
+                    <div class="profile_input">
+                        <button onclick="guardar()" class="profile_btn">Guardar Perfil</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
